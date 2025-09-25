@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Напоминания UI</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", sans-serif;
+        background-color: #f2f2f7;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+            .container {
+        background-color: white;
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        width: 600px;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .scale-button {
+        margin-bottom: 20px;
+        padding: 10px 20px;
+        background-color: #007aff;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      .container-wrapper {
+        transition: transform 0.3s ease;
+        transform-origin: center;
+      }
+
+      .header {
+        font-size: 28px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      .sub-header {
+        font-size: 18px;
+        color: #888;
+        margin-bottom: 20px;
+      }
+
+      .search {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+
+      .search input {
+        flex: 1;
+        padding: 10px;
+        border-radius: 10px;
+        border: none;
+        background-color: #e5e5ea;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        margin-bottom: 20px;
+      }
+
+      .card {
+        background-color: white;
+        border-radius: 10px;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+      }
+
+      .card img {
+        width: 24px;
+        height: 24px;
+      }
+
+      .info {
+        background-color: #f9f9fb;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 14px;
+        margin-bottom: 20px;
+      }
+
+      .info a {
+        color: #007aff;
+        text-decoration: none;
+      }
+
+      .list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        background-color: #e5f1ff;
+        border-radius: 10px;
+        margin-bottom: 20px;
+      }
+
+      .bottom-bar {
+        display: flex;
+        justify-content: space-between;
+        color: #007aff;
+        font-weight: 500;
+        margin-top: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-wrapper" id="wrapper">
+      <div class="container">
+        <div class="search">
+          <input type="text" placeholder="Поиск" />
+        </div>
+
+        <div class="grid">
+          <div class="card">
+            <div>
+              <img src="WhatsApp Image 2025-09-25 at 08.40.37.jpeg" alt="Сегодня" />
+              <p style="">Сегодня</p>
+            </div>
+
+            <span>1</span>
+          </div>
+          <div class="card">
+            <div>
+              <img src="WhatsApp Image 2025-09-25 at 08.40.50.jpeg" alt="В планах" />
+              <p>В планах</p>
+            </div>
+
+            <span>1</span>
+          </div>
+          <div class="card">
+            <div>
+              <img src="WhatsApp Image 2025-09-25 at 08.40.40.jpeg" alt="Все" />
+              <p>Все</p>
+            </div>
+
+            <span>1</span>
+          </div>
+          <div class="card">
+            <div>
+              <img src="WhatsApp Image 2025-09-25 at 08.40.44.jpeg" alt="Завершено" />
+              <p>Завершено</p>
+            </div>
+
+            <span>1</span>
+          </div>
+        </div>
+
+        <div class="info">
+          <strong>Больше о Напоминаниях</strong><br />
+          Чтобы использовать все новые функции, коснитесь кнопки «Обно-<br />
+          <a href="#">Обновить Напоминания</a>
+        </div>
+
+        <div>
+          <strong>Мои списки</strong>
+          <div class="list">
+            <div>Новый список</div>
+            <div>1</div>
+          </div>
+        </div>
+
+        <div class="bottom-bar">
+          <div>+ Напоминание</div>
+          <div>Добавить</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
