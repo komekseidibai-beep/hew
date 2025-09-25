@@ -22,10 +22,13 @@
         padding: 20px;
         border-radius: 20px;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        width: 600px;
-        height: 500px;
+        max-width: 600px;
+        width: 100%;
+        min-height: 400px;
+        height: auto;
         display: flex;
         flex-direction: column;
+        box-sizing: border-box;
       }
 
       .scale-button {
@@ -85,6 +88,7 @@
         align-items: center;
         justify-content: space-between;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        min-width: 0;
       }
 
       .card img {
@@ -121,6 +125,44 @@
         color: #007aff;
         font-weight: 500;
         margin-top: auto;
+      }
+
+      @media (max-width: 700px) {
+        .container {
+          max-width: 95vw;
+          min-height: 300px;
+          padding: 10px;
+        }
+        .grid {
+          grid-template-columns: 1fr;
+        }
+        .header {
+          font-size: 22px;
+        }
+        .sub-header {
+          font-size: 15px;
+        }
+      }
+      @media (max-width: 500px) {
+        .container {
+          padding: 5px;
+          border-radius: 10px;
+        }
+        .card {
+          padding: 6px;
+          font-size: 13px;
+        }
+        .info {
+          font-size: 12px;
+          padding: 6px;
+        }
+        .list {
+          font-size: 13px;
+          padding: 6px;
+        }
+        .bottom-bar {
+          font-size: 14px;
+        }
       }
     </style>
   </head>
